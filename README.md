@@ -48,3 +48,28 @@ Alternative hypothesis : H1 : there is not ant relationship between dependent va
 	
 	-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? 
 	Yes, Beacuse the R-squared = 0.7032 
+
+
+
+## Create Visualizations for the Trip Analysis
+
+The database of this part is  one csv file,  It is imported and road by the below code:
+
+	 -Suspension <- read.csv(file="Suspension_Coil.csv")
+
+The statistical summary of the data is  calculated by the following code;
+
+total_summery <- Suspension%>% summarise( mean=mean(PSI), median=median(PSI), variance=var(PSI),sd=sd(PSI))
+
+![R3](https://user-images.githubusercontent.com/91231253/154820247-a26b04f2-401c-45d6-9925-9feb51df6c81.png)
+
+
+The database is grouped based  on manufacturing_lot and then  the statistical summary of it is calculated (it means that the statistical summary is calculated for each group)
+
+	 group_lot <- Suspension %>% group_by(Manufacturing_Lot) %>% summarise( mean=mean(PSI), median=median(PSI), variance=var(PSI),sd=sd(PSI))
+
+
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+Based on our result; total variance is less than 100, and also variances of lot1 & lot2  are less than 100.Otherwise, the variance of lot3 is more than 100.
