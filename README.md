@@ -18,7 +18,8 @@ The below codes are used to calculate multi linear regression;
 
 	 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance,data=MechaCar))
 	 
-	 ![image](https://user-images.githubusercontent.com/91231253/154819654-cb832a01-09de-488c-8a6c-3b272328cb6f.png)
+	![R1](https://user-images.githubusercontent.com/91231253/154819742-3187a7af-c101-49ee-b694-59a6e0b64d7c.png)
+
 
 
 To determine the most important independent variables to the linear model, we should consider the p-value of each ones. If it is less than 0.05, it means that H0 will be "rejected" and if it is greater than 0.05, it means that H0 will be "failed to rejected".
