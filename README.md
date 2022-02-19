@@ -114,19 +114,25 @@ The below codes are used to analyze that each lot individually are statistically
 
 
 ## Study Design: MechaCar vs Competition
-For comparing MechaCar performace with industry; the below step should be do;
-1-	Compare Avg of each variable of MechaCar vs industry
-2-	Define one KPI for performance and then calculate it for MechaCar vs industry
-We can make a survey and based one the result we should define our KPIs that define the performance, thise servuy should have two parts; one shows to define main elements from consumer and second part should define the main element from professionals of industry
-After that we need to calculate multi relationship(regression) of each group
-Then we will have a great formula for performance
+To compare the performance of MechaCar vs its competitors; 
+Define a KPIs list to meaning of performance;
+ In this stage the variables that make performance of MechaCar will be define (all variables should be measurable).
+Then we should calculate them for MechaCar and industry (because we want to compare MechaCar with its competitors, we can calculate Avg of each variable of its competitors). We can design a consumer survey and a professional survey to define KPIs.
+Then multi relationship(regression) help us to find a performance formula.
+Then t-test help us to compare MechaCar with its competiters.
+Also based on our data; we have the below variables that we can calculate average of each one from industry
+•	Vehicle length
+•	Vehicle weight
+•	Spoiler angle
+•	Ground clearance
+•	AWD
+•	mpg
 
-What metric or metrics are you going to test?
-Based on our data; we have the below variables that we need to have average of each one from industry
-Vehicle length
-Vehicle weight
-Spoiler angle
-Ground clearance
-AWD
-mpg
-Also, if we can do some survey, it is helpful for us to collect more data and define new metrics that is important for consumer when they want to chose a car for example some items from appearance of the car.
+Moreover, consumer survey can help us to define other metrics that impact on  consumer purchase behavior for example some appearance items.
+In this research we should study the below hypothesis;
+
+Null hypothesis(H0): There is not difference between MechaCar performance vs other competitors
+Alternative hypothesis(H1): there is difference between MechaCar performance vs other competitors
+
+T-test is used to analyze the hypotheses. Two sample we have, sample 1 is MechaCar and sample2 is avg of industry. 
+
