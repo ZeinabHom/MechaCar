@@ -35,7 +35,16 @@ Alternative hypothesis : H1 : there is not ant relationship between dependent va
 	 ground_clearance
 	 
 
-	 - Is the slope of the linear model considered to be zero? Why or why not?
+	 - Is the slope of the linear model considered to be zero? Why or why not? 
+	 The intercept and slopes of each dependent variables are;
+	 
+	 
+		(Intercept)    vehicle_length    vehicle_weight     spoiler_angle  
+ 	 	-1.076e+02      6.240e+00         1.276e-03         8.031e-02  
+		ground_clearance  
+     		  3.659e+00
+
+
 	
 	-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? 
 	Yes, Beacuse the R-squared = 0.7032 
