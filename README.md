@@ -74,3 +74,40 @@ The database is grouped based  on manufacturing_lot and then  the statistical su
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 Based on our result; total variance is less than 100, and also variances of lot1 & lot2  are less than 100.Otherwise, the variance of lot3 is more than 100.
+
+
+## ## T-Tests on Suspension Coils
+
+Null hypothesis(H0) and alternative hypothesis(H1) are as follow;
+H0: The mean of all manufacturing lots is equal 1,500 pounds per square inch.
+H1: The mean of all manufacturing lots is not equal 1,500 pounds per square inch.
+
+The below code is used to analyze these hypothesis;
+t.test(Suspension$PSI, mu=mean(1500))
+
+
+![R5](https://user-images.githubusercontent.com/91231253/154820755-77a08595-56ec-489b-ac18-8bc0238f752f.png)
+
+
+	 -P- value is more than 0.05, It means that H0  fail to reject
+
+
+
+The below codes are used to analyze that each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+	 - subset(Suspension, Manufacturing_Lot == 'Lot1')$PSI
+	 - subset(Suspension, Manufacturing_Lot == 'Lot2')$PSI
+	 - subset(Suspension, Manufacturing_Lot == 'Lot3')$PSI
+
+
+
+	 - t.test(((subset(Suspension, Manufacturing_Lot == 'Lot1'))$PSI),mu=mean(1500))
+	 - t.test(((subset(Suspension, Manufacturing_Lot == 'Lot2'))$PSI),mu=mean(1500))
+	 - t.test(((subset(Suspension, Manufacturing_Lot == 'Lot3'))$PSI),mu=mean(1500))
+
+![R6](https://user-images.githubusercontent.com/91231253/154820785-c90addd4-d7fc-4aaf-bb8a-48954b49e186.png)
+
+![R7](https://user-images.githubusercontent.com/91231253/154820837-5c280415-60fe-44d1-84ef-f183279e8a4a.png)
+
+![R8](https://user-images.githubusercontent.com/91231253/154820841-c79695da-cf47-4268-8938-32d6bb72f71a.png)
+
