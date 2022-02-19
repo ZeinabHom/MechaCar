@@ -111,3 +111,22 @@ The below codes are used to analyze that each lot individually are statistically
 
 ![R8](https://user-images.githubusercontent.com/91231253/154820841-c79695da-cf47-4268-8938-32d6bb72f71a.png)
 
+
+
+## Study Design: MechaCar vs Competition
+For comparing MechaCar performace with industry; the below step should be do;
+1-	Compare Avg of each variable of MechaCar vs industry
+2-	Define one KPI for performance and then calculate it for MechaCar vs industry
+We can make a survey and based one the result we should define our KPIs that define the performance, thise servuy should have two parts; one shows to define main elements from consumer and second part should define the main element from professionals of industry
+After that we need to calculate multi relationship(regression) of each group
+Then we will have a great formula for performance
+
+What metric or metrics are you going to test?
+Based on our data; we have the below variables that we need to have average of each one from industry
+Vehicle length
+Vehicle weight
+Spoiler angle
+Ground clearance
+AWD
+mpg
+Also, if we can do some survey, it is helpful for us to collect more data and define new metrics that is important for consumer when they want to chose a car for example some items from appearance of the car.
