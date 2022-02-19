@@ -23,6 +23,9 @@ The below codes are used to calculate multi linear regression;
 
 To determine the most important independent variables to the linear model, we should consider the p-value of each ones. If it is less than 0.05, it means that H0 will be "rejected" and if it is greater than 0.05, it means that H0 will be "failed to rejected".
 
+![R2](https://user-images.githubusercontent.com/91231253/154819893-97dbd4e3-e642-4f16-bb46-bd3558766afb.png)
+
+
 Null hypothesis : H0 : there is not ant relationship between dependent variable and independent variables
 
 Alternative hypothesis : H1 : there is not ant relationship between dependent variable and independent variables
