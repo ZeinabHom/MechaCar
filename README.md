@@ -68,6 +68,7 @@ The database is grouped based  on manufacturing_lot and then  the statistical su
 
 	 group_lot <- Suspension %>% group_by(Manufacturing_Lot) %>% summarise( mean=mean(PSI), median=median(PSI), variance=var(PSI),sd=sd(PSI))
 
+![R4](https://user-images.githubusercontent.com/91231253/154820298-55f036f0-7941-4e0f-9a0f-88b5f37d182b.png)
 
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
